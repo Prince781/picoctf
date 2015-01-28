@@ -5,11 +5,15 @@ Using unescaped POST data in PHP for MySQL requests is very bad. Here we have
 (in the source):
 
 ```PHP
+<?php
+// ...
 $username = $_POST["username"];
 $password = $_POST["password"];
 $debug = $_POST["debug"];
 $query = "SELECT * FROM users WHERE username='$username'";
 $result = mysqli_query($con, $query);
+// ...
+?>
 ```
 
 So, a user can pass in any string to `$username`, and if it contains a 
