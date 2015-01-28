@@ -150,8 +150,6 @@ int main(int argc, char *argv[])
 	FILE *archive = fopen("archive", "w");
 
 	fseek(fin, offset, SEEK_SET);
-	long pos = ftell(fin);
-	printf("position: %ld\n", pos);
 	size_t nb;
 	while ((nb=fread(buf, 1, sizeof(buf), fin)) > 0)
 		fwrite(buf, nb, 1, archive);
