@@ -1,5 +1,6 @@
 Injection 2
 ===========
+Worth: 110 points
 
 Using unescaped POST data in PHP for MySQL requests is very bad. Here we have
 (in the source):
