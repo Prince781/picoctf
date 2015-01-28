@@ -132,7 +132,7 @@ contains four parts:
 
 If we look at our PNG file, we see that the header "IEND" comes before some
 additional data. "IEND" is the Chunk Type indicating the end of the PNG. It is
-four bytes long. It's chunk data will be of 0-byte length, and its CRC will be
+four bytes long. Its chunk data will be of 0-byte length, and its CRC will be
 4 bytes. Therefore, the end of this chunk will be at 0x604 (start of Chunk
 Type, or "I") + 8 = 0x60C. From there on, we have our data.
 
